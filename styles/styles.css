@@ -1,0 +1,25 @@
+/* TITLES DECORATIONS */
+.u-title-1 {
+    margin: 15px 0;
+    padding: 10px 0;
+    color: var(--gray);
+    border-bottom: 2px solid var(--gray);
+}
+
+/* TEXT DECORATIONS */
+
+
+/* TEXT BOX STYLES */
+.text-box {
+    padding: 0 70px;
+    text-align: left;
+}
+/* COLORS STYLES */
+.dark-gray {
+    color: var(--dark-gray);
+}
+
+/* SPACING STYLES */
+.bot-mar-15 {
+    margin-bottom: 15px;
+}
