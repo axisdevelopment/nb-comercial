@@ -23,14 +23,18 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 105px;
+    height: 84px;
     justify-content: space-around;
     align-items: center;
-    z-index: 999;
+    z-index: 888;
     text-transform: uppercase;
     letter-spacing: 2px;
     background-color: white;
-    border-bottom: 3px solid var(--blue);
+    background-image: url("../media/images/nav_bar_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 4px solid var(--blue);
     box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
 }
 
@@ -51,18 +55,34 @@ html {
     border-radius: 2px;
 }
 
-.nav-logo img {
-    height: 90px;
-}
-
 #nav-bar nav a:hover {
     color: white;
     background-color: var(--blue);
 }
 
+#nav-logo {
+    position: absolute;
+    display: flex;
+    width: 190px;
+    height: 164px;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../media/images/hexagon_white.png");
+    background-size: cover;
+    background-position: center;
+    z-index: 999;
+}
+
+#nav-logo img {
+    width: 80%;
+    margin-left: 1px;
+}
+
 /* MAIN STYLES */
 main {
-    margin-top: 60px;
+    margin-top: 84px;
 }
 
 /* -- Home -- */
@@ -78,16 +98,18 @@ main {
 
 #home-img {
     display: flex;
-    width: 50%;
+    width: 40%;
     max-width: 800px;
-    height: calc(100vh - 40px);
+    height: 400px;
     max-height: 1200px;
+    margin: 20px 0 20px 40px;
     justify-content: center;
     align-items: center;
-    background-image: url("../media/images/home_bg.jpg");
+    background-image: url("../media/images/bg_home.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    box-shadow: 15px 15px var(--blue);
 }
 
 #home-img img {
@@ -97,7 +119,7 @@ main {
 #home-txt {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    width: 60%;
     height: calc(100vh - 40px);
     max-height: 1200px;
     align-items: center;
