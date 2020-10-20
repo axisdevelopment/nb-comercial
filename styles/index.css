@@ -5,7 +5,15 @@
 
 html { 
     font-family: "Oxanium", sans-serif;
-    color: var(--dark)
+    color: var(--dark);
+}
+
+body {
+    background-image: url("../media/images/bg_hexagons.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 :root {
@@ -53,6 +61,7 @@ html {
     font-weight: 600;
     color: var(--blue);
     border-radius: 2px;
+    transition: all 0.2s;
 }
 
 #nav-bar nav a:hover {
@@ -89,20 +98,18 @@ main {
 #home {
     display: flex;
     width: 100%;
+    height: calc(100vh - 114px);
     justify-content: center;
     align-items: center;
-    background-image: url("../media/images/bg_hexagons.png");
-    background-size: cover;
-    background-position: bottom;
 }
 
 #home-img {
     display: flex;
-    width: 40%;
+    width: 35%;
     max-width: 800px;
-    height: 400px;
-    max-height: 1200px;
-    margin: 20px 0 20px 40px;
+    height: 320px;
+    max-height: 500px;
+    margin-left: 40px;
     justify-content: center;
     align-items: center;
     background-image: url("../media/images/bg_home.jpg");
@@ -143,6 +150,36 @@ main {
 
 .objs-card:hover {
     background-color: var(--dark-blue);
+}
+
+/* -- Services -- */
+#services {
+    width: 100%;
+    height: max-content;
+    padding: 40px 10%;
+}
+
+.service-card {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    margin: 60px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-text {
+    width: fit-content;
+    color: var(--dark-gray);
+}
+
+.service-img {
+    min-width: 400px;
+    min-height: 250px;
+    background-image: url("../media/images/bg_home.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* -- Footer -- */
