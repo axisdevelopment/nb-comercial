@@ -173,14 +173,26 @@ main {
     color: var(--dark-gray);
 }
 
+.simg-1 {
+    background-image: url("../media/images/services_01.jpg");
+}
+
+.simg-2 {
+    background-image: url("../media/images/services_02.jpg");
+}
+
+.simg-3 {
+    background-image: url("../media/images/services_03.jpg");
+}
+
 .service-img {
     min-width: 400px;
     min-height: 250px;
-    background-image: url("../media/images/bg_home.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 
 /* -- Footer -- */
 footer {
