@@ -278,9 +278,9 @@ main {
     color: white
 }
 
-#prod-1-img { background-image: url("/media/images/product_01.png") }
-#prod-2-img { background-image: url("/media/images/product_02.png") }
-#prod-3-img { background-image: url("/media/images/product_03.jpg") }
+#prod-1-img { background-image: url("../media/images/product_01.png") }
+#prod-2-img { background-image: url("../media/images/product_02.png") }
+#prod-3-img { background-image: url("../media/images/product_03.jpg") }
 
 .prod-catalog-link {
     width: 100%;
