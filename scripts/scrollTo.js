@@ -4,7 +4,7 @@ $(document).ready(function() {
         e.preventDefault();
         $destiny = $(this).attr("href");
         $("html, body").animate({
-            scrollTop: $($destiny).offset().top
+            scrollTop: ($($destiny).offset().top - 80)
         }, 600);
     });
 

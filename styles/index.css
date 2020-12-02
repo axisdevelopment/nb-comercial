@@ -51,6 +51,11 @@ body {
     background-color: var(--blue);
 }
 
+.current-location {
+    color: white !important;
+    background-color: var(--blue);
+}
+
 #nav-logo {
     position: absolute;
     display: flex;
@@ -80,16 +85,17 @@ main {
 #home {
     display: flex;
     width: 100%;
-    height: calc(100vh - 114px);
+    padding: 40px 0;
+    min-height: max-content;
     justify-content: center;
     align-items: center;
 }
 
 #home-img {
     display: flex;
-    width: 35%;
+    width: 38%;
     max-width: 800px;
-    height: 320px;
+    height: 400px;
     max-height: 500px;
     margin-left: 40px;
     justify-content: center;
@@ -98,7 +104,6 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    box-shadow: 15px 15px var(--blue);
 }
 
 #home-img img {
@@ -109,8 +114,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     width: 60%;
-    height: calc(100vh - 40px);
-    max-height: 1200px;
     align-items: center;
     justify-content: center;
 }
@@ -124,7 +127,7 @@ main {
 .objs-card {
     text-align: center;
     width: calc(100% / 3);
-    padding: 85px 45px;
+    padding: 35px 45px;
     color: white;
     background-color: var(--blue);
     transition: all 0.2s;
@@ -243,7 +246,9 @@ main {
 
 .catalog {
     width: 80%;
+    height: max-content;
     margin: 0 auto;
+    padding: 20px 0;
 }
 
 .cat-items {
@@ -254,28 +259,27 @@ main {
 
 .prod-data {
     display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    width: 50%;
-    height: 400px;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    width: 70%;
     color: var(--dark-gray);
     font-size: 20px;
-    transition: all 0.2s;
 }
 
-.prod-img {
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+.prod-data-img {
+    text-align: center;
+    width: 40%;
+}
+
+.prod-img img {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
 }
 
 .prod-txt {
-    line-height: 30px;
-} .cat-items:hover .prod-txt {
-    background-color: var(--gray);
-    color: white
+    line-height: 48px;
 }
 
 #prod-1-img { background-image: url("../media/images/product_01.png") }
@@ -298,12 +302,47 @@ main {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 40px;
     justify-content: center;
 }
 
-.prod-video {
-    width: 80%;
+/* -- Sponsors -- */
+.sponsors-h {
+    width: 100%;
+    margin-top: 40px;
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+    background-color: var(--blue);
+}
+
+.sponsor {
+    text-align: center;
+    width: 100%;
+    color: var(--dark-gray);
+}
+
+.sponsor-prods {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 5%;
+}
+
+.sponsor-prod-card {
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+    color: var(--dark-gray);
+}
+
+.sponsor-video {
+    width: 70%;
     margin: 40px auto;
+}
+
+.sponsor-video video {
+    width: 100%;
 }
 
 /* -- Footer -- */
