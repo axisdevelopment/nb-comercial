@@ -76,6 +76,15 @@ body {
     margin-left: 1px;
 }
 
+.second-nav {
+    position: fixed;
+    top: -100px;
+    padding-top: 0;
+    margin-top: 0;
+    z-index: 111;
+    transition: all 0.2s;
+}
+
 /* MAIN STYLES */
 main {
     margin-top: 84px;
@@ -304,6 +313,32 @@ main {
     width: 100%;
     margin-top: 40px;
     justify-content: center;
+}
+
+.electric-catalog {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.electric-products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: 0 auto;
+} .electric-products img {
+    width: 33%;
+}
+
+.electric-prods-txt {
+    width: 60%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 35px;
+    color: var(--dark-gray);
 }
 
 /* -- Sponsors -- */

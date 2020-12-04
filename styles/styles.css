@@ -105,6 +105,11 @@ strong {
     border-left: 6px solid var(--blue);
 }
 
+.aside {
+    border: 1px solid white;
+    padding: 14px;
+}
+
 /* TEXT BOX STYLES */
 .text-box {
     padding: 0 70px;
