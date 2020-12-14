@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +9,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet">
-    <link href="styles/styles.css" rel="stylesheet">
 </head>
 <body>
     
     <!-- HEADER -->
     <header>
 
-        <div id="nav-bar">
-            <div id="nav-logo">
-                <img src="./media/icons/nb_logo_fit.png" alt="NB Comercial logo">
+        <!-- Navigation bar -->
+        <img src="./media/images/hexagon_white.png" 
+            alt="Logo comercial"
+            class="nav-logo-bg">
+        <img src="./media/icons/nb_logo_fit.png" 
+            alt="Logo comercial"
+            class="nav-logo">
+        <nav id="main-nav">
+            <a id="nav-link-1" href="#home" class="scroll-to">Inicio</a>
+            <a id="nav-link-2" href="#services" class="scroll-to">Servicios</a>
+            <a id="nav-link-3" href="#products" class="scroll-to">Productos</a>
+            <a id="nav-link-4" href="#sponsors" class="scroll-to">Representadas</a>
+            <a id="nav-link-5" href="#contact" class="scroll-to">Contacto</a>
+        </nav>
+
+        <!-- Header banner -->
+        <div id="home">
+
+            <div id="home-img">
+                <!-- Background image here -->
             </div>
-            <nav>
-                <a id="nav-link-1" href="#home" class="scroll-to">Inicio</a>
-                <a id="nav-link-2" href="#services" class="scroll-to">Servicios</a>
-                <a id="nav-link-3" href="#products" class="scroll-to">Productos</a>
-                <a id="nav-link-4" href="#sponsors" class="scroll-to">Representadas</a>
-                <a id="nav-link-5" href="#">Contacto</a>
-            </nav>
+            <div class="home-txt">
+                <h1 class="u-title-1">NB Comercial</h1>
+                <p>Somos una micro empresa formada por profesionales del comercio que nace con el objeto de comercializar bienes y productos <strong>B2B</strong> y <strong>B2C</strong> a través de las <strong>Representaciones Comerciales</strong> y Operaciones de <strong>Compra-Venta</strong> propias y por encargo.
+                <br><br>
+                Constituida para ofrecer soluciones efectivas en la intermediación entre <strong>proveedores y clientes</strong> actuando en los sectores industriales, mayoristas, distribuidores, minoristas y particulares.
+                <br>
+                Tanto en el mercado nacional como internacional.
+                <br><br>
+                <strong>Facilitando negocios</strong> a través de procesos simples, respuesta rápida y solución a medida de cada necesidad.</p>
+            </div>
+
         </div>
 
     </header>
@@ -34,234 +54,237 @@
     <!-- MAIN -->
     <main>
 
-        <!-- --- HOME --- -->
-        <article id="home">
-            <div id="home-img">
-                <!-- Background image here -->
-            </div>
-            <div id="home-txt" class="text-box">
-                <div>
-                    <h1 class="u-title-1">NB Comercial</h1>
-                    <p class="bot-mar-25 dark-gray">Somos una micro empresa formada por profesionales del comercio que nace con el objeto de comercializar bienes y productos <strong>B2B</strong> y <strong>B2C</strong> a través de las <strong>Representaciones Comerciales</strong> y Operaciones de <strong>Compra-Venta</strong> propias y por encargo.</p>
-                    <p class="bot-mar-25 dark-gray">Constituida para ofrecer soluciones efectivas en la intermediación entre <strong>proveedores y clientes</strong> actuando en los sectores industriales, mayoristas, distribuidores, minoristas y particulares.<br>Tanto en el mercado nacional como internacional.</p>
-                    <p class="bot-mar-25 dark-gray"><strong>Facilitando negocios</strong> a través de procesos simples, respuesta rápida y solución a medida de cada necesidad.</p>
-                </div>
-            </div>
-        </article>
-
-        <!-- --- OBJETIVES --- -->
+        <!-- Objetives-->
         <article id="objetives">
-            <div class="objs-card">
-                <h1 class="u-title-2">Misión</h1>
+
+            <div class="objetive-card">
+                <h2 class="mb-20">X</h2>
+                <h2 class="mb-15">MISIÓN</h2>
                 <p>Ser facilitadores de negocios, operando con rapidez, brindando atención de calidad y garantizando la debida asistencia desde la especificación requerida hasta la satisfacción total en la post venta.</p>
             </div>
-            <div class="objs-card">
-                <h1 class="u-title-2">Visión</h1>
+            <div class="objetive-card">
+                <h2 class="mb-20">X</h2>
+                <h2 class="mb-15">VISIÓN</h2>
                 <p>Construir y liderar con empatía una red de negocios que nos permita fidelizar clientes y proveedores a través del impacto y los resultados positivos, conquistando la credibilidad del mercado.</p>
             </div>
-            <div class="objs-card">
-                <h1 class="u-title-2">Política</h1>
-                <p>Respetar y valorar nuestro mayor patrimonio:<br>Nuestros clientes<br>Nuestro equipo<br>Nuestros proveedores</p>
+            <div class="objetive-card">
+                <h2 class="mb-20">X</h2>
+                <h2 class="mb-15">POLÍTICA</h2>
+                <p>Respetar y valorar nuestro mayor patrimonio:<br>
+                Nuestros clientes<br>
+                Nuestro equipo<br>
+                Nuestros proveedores</p>
             </div>
+
         </article>
 
-        <!-- --- SERVICES --- -->
+        <!-- Services -->
         <article id="services">
-            <div class="services-h">
-                <h1>SERVICIOS</h1>
-                <div id="serv-nav" class="services-nav">
-                    <a href="#service-1" class="scroll-to"><div class="s-btn"><p>COMPRA VENTA</p></div></a>
-                    <a href="#service-2" class="scroll-to"><div class="s-btn"><p>REPRESENTACIONES COMERCIALES</p></div></a>
-                    <a href="#service-3" class="scroll-to"><div class="s-btn"><p>COMERCIO INTERNACONAL</p></div></a>
+
+            <div class="art-header">
+                <h3>SERVICIOS</h3>
+            </div>
+            <div class="art-nav">
+                <div id="service-btn-1" class="w34"><p>COMPRA VENTA</p></div>
+                <div id="service-btn-2" class="w34"><p>REPRESENTACIONES COMERCIALES</p></div>
+                <div id="service-btn-3" class="w34"><p>COMERCIO INTERNACIONAL</p></div>
+            </div>
+            <div class="slider-box">
+                <div id="service-1" class="slider-content">
+                    <div class="content-txt">
+                        <h3 class="mb-15">COMPRA VENTA</h3>
+                        <p>Operamos en la comercialización de mercaderías bajo dos modalidades:
+                        <br><br>
+                        <strong>Trader:</strong><br>
+                        Adquirimos directamente de los fabricantes los productos indicados por expreso encargo de nuestros clientes, sean revendedores o usuarios finales.<br>
+                        Para luego proveerlos, cumpliendo los requerimientos y especificaciones solicitadas.
+                        <br><br>
+                        <strong>Revendedores por cuenta propia:</strong><br>
+                        Comercializamos líneas de productos seleccionadas y de calidad.<br>
+                        Contando con stock permanente, ofreciendo entrega inmediata con las mejores condiciones y garantía total.</p>
+                    </div>
+                    <div id="service-img-1" class="content-img">
+                        <!-- Image background -->
+                    </div>
                 </div>
-                <div id="serv-nav-fix" class="services-nav second-nav">
-                    <a href="#service-1" class="scroll-to"><div class="s-btn"><p>COMPRA VENTA</p></div></a>
-                    <a href="#service-2" class="scroll-to"><div class="s-btn"><p>REPRESENTACIONES COMERCIALES</p></div></a>
-                    <a href="#service-3" class="scroll-to"><div class="s-btn"><p>COMERCIO INTERNACONAL</p></div></a>
+                <div id="service-2" class="slider-content">
+                    <div class="content-txt">
+                        <h3 class="mb-15">REPRESENTACIONES COMERCIALES</h3>
+                        <p>Ofrecemos nuestra estructura y equipo de profesionales al servicio de nuestras representadas.<br>
+                        Cuidando el valor marca y alineándonos a sus valores.<br>
+                        <br><br>
+                        Nuestra gestión comercial se basa en la atención personalizada.<br>
+                        Realizando presentaciones de propuestas, demostraciones de productos, negociación efectiva, gestión de cobranza y atención de reclamos.
+                        <br><br>
+                        Realizamos un seguimiento del cliente, manteniendo contacto permanente, visitas periódicas y comunicación efectiva. Detectando alertas tempranas para satisfacción de necesidades y nuevas oportunidades.
+                        <br><br>
+                        Construyendo lazos comerciales de confianza y fortaleciendo la relación para un crecimiento continuo.</p>
+                    </div>
+                    <div id="service-img-2" class="content-img">
+                        <!-- Image background -->
+                    </div>
+                </div>
+                <div id="service-3" class="slider-content">
+                    <div class="content-txt">
+                        <h3 class="mb-15">COMERCIO INTERNACIONAL</h3>
+                        <p><strong>Gestión Operativa:</strong><br>
+                        Asumimos la terciarización del departamento de Comercio Exterior de aquellas empresas que quieran operar en el mercado internacional:</p>
+                        <br>
+                        <ul>
+                            <li>Identificamos importadores y proveedores externos;</li>
+                            <li>Negociamos de forma efectiva obteniendo los resultados esperados;</li>
+                            <li>Confeccionamos y controlamos los documentos comerciales;</li>
+                            <li>Contratamos fletes internacionales;</li>
+                            <li>Operamos Exporta Simple, para envíos rápidos y seguros.</li>
+                        </ul>
+                        <br>
+                        <p><strong>Investigación y Consultoría:</strong></p>
+                        <br>
+                        <ul>
+                            <li>Análisis y Desarrollo de Mercado;</li>
+                            <li>Contrato de Compra - Venta</li>
+                            <li>Confección de Precios FOB y CIF;</li>
+                            <li>Asesoramiento Aduanero;</li>
+                            <li>Tramites y Licencias.</li>
+                        </ul>
+                    </div>
+                    <div id="service-img-3" class="content-img">
+                        <!-- Image background -->
+                    </div>
                 </div>
             </div>
-            <div id="service-1" class="service-card">
-                <div class="service-text right-mar-40 left-text">
-                    <h2 class="s-title-1 lb-6">COMPRA VENTA</h2>
-                    <p class="bot-mar-15">Operamos en la comercialización de mercaderías bajo dos modalidades:</p>
-                    <p class="bot-mar-15"><strong>Trader:</strong><br>Adquirimos directamente de los fabricantes los productos indicados por expreso encargo de nuestros clientes, sean revendedores o usuarios finales.<br>Para luego proveerlos, cumpliendo los requerimientos y especificaciones solicitadas.</p>
-                    <p><strong>Revendedores por cuenta propia:</strong><br>Comercializamos líneas de productos seleccionadas y de calidad.<br>Contando con stock permanente, ofreciendo entrega inmediata con las mejores condiciones y garantía total.</p>
-                </div>
-                <div class="service-img simg-1">
-                    <!-- img -->
-                </div>
-            </div>
-            <div id="service-2" class="service-card">
-                <div class="service-text right-mar-40 left-text">
-                    <h2 class="s-title-1 lb-6">REPRESENTACIONES COMERCIALES</h2>
-                    <p class="bot-mar-15">Ofrecemos nuestra estructura y equipo de profesionales al servicio de nuestras representadas.<br>Cuidando el valor marca y alineándonos a sus valores.</p>
-                    <p class="bot-mar-15">Nuestra gestión comercial se basa en la atención personalizada.<br>Realizando presentaciones de propuestas, demostraciones de productos, negociación efectiva, gestión de cobranza y atención de reclamos.</p>
-                    <p class="bot-mar-15">Realizamos un seguimiento del cliente, manteniendo contacto permanente, visitas periódicas y comunicación efectiva. Detectando alertas tempranas para satisfacción de necesidades y nuevas oportunidades.</p>
-                    <p>Construyendo lazos comerciales de confianza y fortaleciendo la relación para un crecimiento continuo.</p>
-                </div>
-                <div class="service-img simg-2">
-                    <!-- img -->
-                </div>
-            </div>
-            <div id="service-3" class="service-card">
-                <div class="service-text right-mar-40 left-text">
-                    <h2 class="s-title-1 lb-6">COMERCIO INTERNACIONAL</h2>
-                    <p class="bot-mar-15"><strong>Gestión Operativa:</strong><br>Asumimos la terciarización del departamento de Comercio Exterior de aquellas empresas que quieran operar en el mercado internacional:</p>
-                    <ul class="bot-mar-15">
-                        <li>Identificamos importadores y proveedores externos;</li>
-                        <li>Negociamos de forma efectiva obteniendo los resultados esperados</li>
-                        <li>Confeccionamos y controlamos los documentos comerciales;</li>
-                        <li>Contratamos fletes internacionales;</li>
-                        <li>Operamos Exporta Simple, para envíos rápidos y seguros.</li>
-                    </ul>
-                    <p class="bot-mar-15"><strong>Investigación y Consultoría:</strong></p>
-                    <ul>
-                        <li>Análisis y Desarrollo de Mercado;</li>
-                        <li>Contrato de Compra- Venta</li>
-                        <li>Confección de Precios FOB y CIF;</li>
-                        <li>Asesoramiento Aduanero;</li>
-                        <li>Tramites y Licencias.</li>
-                    </ul>
-                </div>
-                <div class="service-img simg-3">
-                    <!-- img -->
-                </div>
-            </div>
+
         </article>
 
+        <!-- Products -->
         <article id="products">
-            <div class="products-h">
-                <h1>PRODUCTOS</h1>
-                <div id="prod-nav" class="products-nav">
-                    <a href="#products-1" class="scroll-to"><div class="p-btn">ARTÍCULOS DEPORTIVOS & DE ENTRENAMIENTO</div></a>
-                    <a href="#products-2" class="scroll-to"><div class="p-btn">HERRAMIENTAS ELÉCTRICAS</div></a>
+
+            <div class="art-header">
+                <h3>PRODUCTOS</h3>
+            </div>
+            <div class="art-nav">
+                <div id="product-btn-1" class="w34"><p>ARTICULOS DEPORTIVOS & DE ENTRENAMIENTO</p></div>
+                <div id="product-btn-2" class="w34"><p>HERRAMIENTAS ELÉCTRICAS</p></div>
+                <div id="product-btn-3" class="w34"><p>CONECTORES</p></div>
+            </div>
+            <div class="slider-box">
+                <div id="product-1" class="slider-content products-box">
+                    <img src="./media/images/products_01.png" alt="Productos">
+                    <div>
+                        <h4 class="mb-15">Fitness - Funcional y Crossfit - Boxeo y Artes Marciales - Coordinación y Rehabilitación - Natación</h4>
+                        <p>Mancuernas - con Tope / Pesas Rusas / Discos / Barra 1.20mt<br>
+                        Tobilleras y Muñequeras / Corebag / Medicine<br>
+                        Colchonetas / Mat / Drop Mate / Abmat<br>
+                        Bancos Abdominal, Multiangular, Sentadilla / Barra dominada<br>
+                        Pelotas, Esferas & Balones<br>
+                        Guantes de Box, Artes Marciales, MMA & entrenamiento<br>
+                        Bolsas / Cielo Tierra / Pera<br>
+                        Vendas / Protectores<br>                                       
+                        Escaleras de coordinación / Vallas / Conos tortuga & Rígido<br>                                        
+                        Sogas / Step / Rueda abdominal / Rolo<br>                                       
+                        Bandas TRX / Circular<br>                                        
+                        Bosu / Mini tramp / Disco equilibrio<br>                                       
+                        Calzas / Pantalones & Tops deportivos<br>
+                        Calzado de entrenamiento / Sparring<br>
+                        Antiparras / Gorros / Flotadores<br>
+                        Accesorios complementarios</p>
+                    </div>
                 </div>
-                <div id="prod-nav-fix" class="products-nav second-nav">
-                    <a href="#products-1" class="scroll-to"><div class="p-btn">ARTÍCULOS DEPORTIVOS & DE ENTRENAMIENTO</div></a>
-                    <a href="#products-2" class="scroll-to"><div class="p-btn">HERRAMIENTAS ELÉCTRICAS</div></a>
+                <div id="product-2" class="slider-content products-box">
+                    <img src="./media/images/products_02.png" alt="Productos">
+                    <div>
+                        <h4 class="mb-15">Hobbistas - Profesionales - Industriales</h4>
+                        <p>Aparejos Eléctricos / Eléctricos a cadena<br>
+                        Arrancadores & Cargadores de batería<br>
+                        Aspiradoras Portátiles / Hogar / Industrial<br>
+                        Calefactores Turbina<br>
+                        Compresores<br>
+                        Equipos de pintura a soplete<br>
+                        Electrobombas / Motobombas<br>
+                        Grupos Electrógenos<br>
+                        Herramientas portátiles / a batería / neumáticas / hidráulicas<br>
+                        Herramientas de banco & de pie<br>
+                        Hidro lavadoras<br>
+                        Roscadoras<br>
+                        Soldadoras Inverter / MIG / MAG / TIG</p>
+                    </div>
+                </div>
+                <div id="product-3" class="slider-content products-box-s">
+                    <div>
+                        <h4 class="mb-15">De Injeccion electronica - Modulos - Linea pesada - Linea agricola - Linea automotriz</h4>
+                    </div>
+                    <img src="./media/images/products_03.png" alt="Productos">
                 </div>
             </div>
-            <div>
-                <div id="products-1">
-                    <div class="product-h">
-                        <h3 class="bot-mar-15">ARTÍCULOS DEPORTIVOS & DE ENTRENAMIENTO</h3>
-                        <p>Fitness - Funcional y Crossfit - Boxeo y Artes Marciales - Coordinación y Rehabilitación - Natación</p>
-                    </div>
-                    <div class="catalog">
-                        <div class="cat-items">
-                            <div class="prod-data-img prod-img">
-                                <img src="media/images/product_01.png" alt="productos">
-                                <img src="media/images/product_02.png" alt="productos">
-                                <img src="media/images/product_03.jpg" alt="productos">
-                            </div>
-                            <div class="prod-data prod-txt">
-                                <div>
-                                    <p>Mancuernas - con Tope / Pesas Rusas / Discos / Barra 1.20mt<br>
-                                    Tobilleras y Muñequeras / Corebag / Medicine<br>
-                                    Colchonetas / Mat / Drop Mate / Abmat<br>
-                                    Bancos Abdominal, Multiangular, Sentadilla / Barra dominada<br>
-                                    Pelotas, Esferas & Balones<br>
-                                    Guantes de Box, Artes Marciales, MMA & entrenamiento<br>
-                                    Bolsas / Cielo Tierra / Pera<br>
-                                    Vendas / Protectores<br>                                       
-                                    Escaleras de coordinación / Vallas / Conos tortuga & Rígido<br>                                        
-                                    Sogas / Step / Rueda abdominal / Rolo<br>                                       
-                                    Bandas TRX / Circular<br>                                        
-                                    Bosu / Mini tramp / Disco equilibrio<br>                                       
-                                    Calzas / Pantalones & Tops deportivos<br>
-                                    Calzado de entrenamiento / Sparring<br>
-                                    Antiparras / Gorros / Flotadores<br>
-                                    Accesorios complementarios</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="products-2">
-                    <div class="product-h">
-                        <h3 class="bot-mar-15">HERRAMIENTAS ELÉCTRICAS</h3>
-                        <p class="top-mar-15 bot-mar-25 aside">Seguinos en nuestro Instagram <a href="https://www.instagram.com/nb.comercial/" target="_blank" class="a1">@nb.comercial</a> para conocer más sobre nuestros productos y promociones</p>
-                        <a href="./files/cid_catalog.pdf" target="_blank" class="prod-catalog-link"><p>VER CATALOGO CID COMPLETO</p></a>     
-                    </div>
-                    <div class="electric-catalog">
-                        <div class="electric-products">
-                            <img src="./media/images/electric_prod_01.jpg" alt="producto">
-                            <img src="./media/images/electric_prod_02.jpg" alt="producto">
-                            <img src="./media/images/electric_prod_03.jpg" alt="producto">
-                            <img src="./media/images/electric_prod_04.jpg" alt="producto">
-                            <img src="./media/images/electric_prod_05.jpg" alt="producto">
-                            <img src="./media/images/electric_prod_06.jpg" alt="producto">
-                            <img src="./media/images/electric_prod_07.jpg" alt="producto">
-                            <img src="./media/images/electric_prod_08.jpg" alt="producto">
-                            <img src="./media/images/electric_prod_09.jpg" alt="producto">
-                        </div>
-                        <div class="electric-prods-txt">
-                            <p>Aparejos Eléctricos / Eléctricos a cadena<br>
-                            Arrancadores & Cargadores de batería<br>
-                            Aspiradoras Portátiles / Hogar / Industrial<br>
-                            Calefactores Turbina<br>
-                            Compresores<br>
-                            Equipos de pintura a soplete<br>
-                            Electrobombas / Motobombas<br>
-                            Grupos Electrógenos<br>
-                            Herramientas manuales eléctricas / a batería / neumáticas / hidráulicas<br>
-                            Herramientas de banco & de pie<br>
-                            Hidro lavadoras<br>
-                            Roscadoras<br>
-                            Soldadoras Inverter / MIG / MAG / TIG</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="call-to-action">
+                <p>Seguinos en nuestro Instagram <a href="https://www.instagram.com/nb.comercial/" target="_blank" class="a-1">@nb.comercial</a> para conocer más sobre nuestros productos y promociones</p>
             </div>
+
         </article>
 
+        <!-- Sponsors -->
         <article id="sponsors">
-            <div class="sponsors-h">
+
+            <div class="art-header">
                 <h3>REPRESENTADAS</h3>
             </div>
-            <div class="sponsor">
-                <h2 class="bot-mar-25 u-title-4">CID</h2>
-                <img src="media/images/cid_logo.png" alt="CID logotipo" class="bot-mar-25">
-                <p>Fabrica brasilera de máquinas y equipos para Agropecuaria, Construcción Civil y Jardinería</p>
-                <a href="https://cid.ind.br/home" target="_blank" class="a2">www.cid.ind.br</a>
+            <div class="sponsor-header">
+                <img src="media/images/cid_logo.png" class="mb-15">
+                <p>Fabrica brasilera de máquinas y equipos para Agropecuaria, Construcción Civil y Jardinería.</p>
+                <a href="https://cid.ind.br/home" target="_blank" class="mb-15">www.cid.ind.br</a>
             </div>
-            <div class="sponsor-prods">
-                <div class="sponsor-prod-card">
-                    <h4 class="bot-mar-15">Agropecuaria</h4>
+            <div class="sponsor-cards">
+                <div class="sponsor-card">
+                    <h4 class="mb-15">Agropecuaria</h4>
                     <p>Trituradores y Picadores de Forraje Eléctricos y a Combustión</p>
                 </div>
-                <div class="sponsor-prod-card">
-                    <h4 class="bot-mar-15">Jardinería</h4>
-                    <p>Tijeras de Poda</p>
-                    <p>Serruchos, Cuchillos y Afiladores</p>
-                    <p>Desmalezadoras a combustión</p>
-                    <p>Bordeadoras Eléctricas</p>
-                    <p>Motosierras</p>
-                    <p>Cortadoras de Césped Eléctricas y a combustión</p>
-                    <p>Sopladores de Hojas</p>
-                    <p>Corta cercos</p>
+                <div class="sponsor-card">
+                    <h4 class="mb-15">Jardinería</h4>
+                    Tijeras de Poda<br>
+                    Serruchos, Cuchillos y Afiladores<br>
+                    Desmalezadoras a combustión<br>
+                    Bordeadoras Eléctricas<br>
+                    Motosierras<br>
+                    Cortadoras de Césped Eléctricas y a combustión<br>
+                    Sopladores de Hojas<br>
+                    Corta cercos</p>
                 </div>
-                <div class="sponsor-prod-card">
-                    <h4 class="bot-mar-15">Construcción Civil</h4>
-                    <p>Hormigoneras de Volteo Eléctricas y a Combustión</p>
-                    <p>Carretillas de Mano</p>
+                <div class="sponsor-card">
+                    <h4 class="mb-15">Construcción Civil</h4>
+                    <p>Hormigoneras de Volteo Eléctricas y a Combustión<br>
+                    Carretillas de Mano</p>
                 </div>
             </div>
             <div class="sponsor-video">
-                <video src="./videos/cid_video.mp4" controls type="video/mp4"></video>
+                <video src="./videos/cid_video.mp4" type="video/mp4" controls>No se ha podido cargar el video.</video>
             </div>
+            <div class="catalog">
+                <a href="./files/cid_catalog.pdf" target="_blank" class="catalog"><div>Ver catálogo de CID completo</div></a>
+            </div>
+
         </article>
 
-        <footer>
-            <p>Pie de página...</p>
-        </footer>
+        <!-- Contact -->
+        <article id="contact">
+
+            <div class="art-header">
+                <h3>CONTACTO</h3>
+            </div>
+
+        </article>
 
     </main>
 
+    <!-- FOOTER -->
+    <footer>
+
+    </footer>
+
+    <!-- SCRIPTS -->
     <script src="./scripts/jquery-3.5.1.min.js"></script>
     <script src="./scripts/scrollTo.js"></script>
+    <script src="./scripts/slider_box.js"></script>
     <script src="./scripts/navigation.js"></script>
-    <script src="./scripts/second_nav.js"></script>
 
 </body>
 </html>
