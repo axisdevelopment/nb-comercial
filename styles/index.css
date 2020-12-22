@@ -23,6 +23,13 @@ html {
     font-size: 14px;
 }
 
+body {
+    background-image: url("../media/images/bg_hexagons.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
 /* NAV BAR ----------------------------------------------- */
 #main-nav {
     position: fixed;
@@ -33,6 +40,10 @@ html {
     height: 84px;
     background-color: white;
     border-bottom: 4px solid var(--blue);
+    background-image: url("../media/images/nav_bar_bg.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     z-index: 997;
 } #main-nav a {
     margin: 0 20px;
@@ -71,12 +82,12 @@ html {
     align-items: center;
     width: 100%;
     min-height: calc(100vh - 135px);
-    padding: 104px 5% 20px 5%;
+    padding: 84px 5% 0px 0px;
 }
 
 #home-img {
-    width: 40%;
-    height: 350px;
+    width: 50%;
+    height: 400px;
     background-image: url("../media/images/bg_home.jpg");
     background-position: center;
     background-size: cover;
@@ -84,7 +95,7 @@ html {
 }
 
 .home-txt {
-    width: 60%;
+    width: 50%;
     padding-left: 40px;
 }
 
@@ -106,6 +117,12 @@ html {
     background-color: var(--dark-blue);
 }
 
+.objetive-card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 18px;
+}
+
 /* SERVICES ---------------------------------------------- */
 #services {
     width: 100%;
@@ -125,10 +142,11 @@ html {
     align-items: center !important;
 } .products-box p, .products-box h4 {
     margin-left: 40px;
-    font-size: 18px;
+    font-size: 16px;
 } .products-box h4 {
     padding: 0 10px;
     font-weight: 500;
+    border-radius: 4px;
 } .products-box img { width: 340px; }
 
 .products-box-s {
@@ -138,15 +156,16 @@ html {
     font-size: 18px;
     padding: 0 94px;
     font-weight: 500;
+    border-radius: 4px;
 } 
 
 .call-to-action {
     text-align: center;
     width: 100%;
     padding: 20px;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 30px;
-    background-color: var(--dark);
+    background-color: var(--dark-gray);
     color: white;
     transition: all 0.2s;
 } .call-to-action:hover {
@@ -184,6 +203,7 @@ html {
     margin: 20px auto;
 } .sponsor-video video {
     width: 100%;
+    border-radius: 4px;
 }
 
 .catalog {
@@ -194,6 +214,7 @@ html {
     background-color: var(--blue);
     padding: 14px;
     transition: all 0.2s;
+    border-radius: 4px;
 } .catalog a {
     color: white;
 } .catalog a:hover div {
@@ -219,6 +240,15 @@ html {
     margin: 50px 0;
     padding: 0 5%;
     justify-content: space-around;
+}
+
+.contact-card {
+    text-align: center;
+}
+
+.contact-card img {
+    width: 40px;
+    margin-bottom: 15px;
 }
 
 .send-message {
@@ -323,7 +353,7 @@ footer h4 {
 .art-nav {
     display: flex;
     width: 100%;
-    height: 84px;
+    height: 60px;
     padding: 0 10%;
     background-color: var(--dark-gray);
     color: white;
@@ -333,7 +363,7 @@ footer h4 {
     align-items: center;
     justify-content: center;
     padding: 0 10px;
-    font-size: 18px;
+    font-size: 14px;
     transition: all 0.2s;
 } .art-nav div:hover {
     cursor: pointer;
@@ -395,6 +425,7 @@ h4 {
     background-color: var(--blue);
     color: white;
     line-height: 30px;
+    border-radius: 4px;
 }
 
 .a-1 {
@@ -405,6 +436,36 @@ h4 {
 .footer-a {
     color: white;
     line-height: 24px;
+}
+
+.ing-ico::before {
+    content: url("../media/icons/instagram_gris_ico.png");
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.tel-ico::before {
+    content: url("../media/icons/telefono_mini_ico.png");
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.correo-ico::before {
+    content: url("../media/icons/correo_mini_ico.png");
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.ig-m-ico::before {
+    content: url("../media/icons/instagram_mini_ico.png");
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.ig-ico::before {
+    content: url("../media/icons/instagram_ico.png");
+    vertical-align: middle;
+    margin: 0 4px;
 }
 
 /* Deco. SPACING ----------------------------------------- */
