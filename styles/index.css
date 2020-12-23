@@ -82,7 +82,7 @@ body {
     align-items: center;
     width: 100%;
     min-height: calc(100vh - 135px);
-    padding: 84px 5% 0px 0px;
+    padding: 104px 5% 0px 5%;
 }
 
 #home-img {
@@ -102,25 +102,30 @@ body {
 /* OBJETIVES --------------------------------------------- */
 #objetives {
     display: flex;
+    justify-content: space-between;
     width: 100%;
     height: max-content;
+    padding: 40px 5% 0 5%;
 }
 
 .objetive-card {
     text-align: center;
-    width: 34%;
+    width: 30%;
     padding: 35px 30px;
     background-color: var(--blue);
     color: white;
+    font-size: 12px;
     transition: all 0.2s;
 } .objetive-card:hover {
     background-color: var(--dark-blue);
+} .objetive-card h2 {
+    font-size: 18px;
 }
 
 .objetive-card img {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 18px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 16px;
 }
 
 /* SERVICES ---------------------------------------------- */
@@ -153,11 +158,14 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 } .products-box-s h4 {
-    font-size: 18px;
-    padding: 0 94px;
+    font-size: 16px;
+    width: 100%;
+    padding: 0 20px;
     font-weight: 500;
     border-radius: 4px;
-} 
+} .products-box-s img {
+    width: 60%;
+}
 
 .call-to-action {
     text-align: center;
@@ -367,6 +375,10 @@ footer h4 {
     transition: all 0.2s;
 } .art-nav div:hover {
     cursor: pointer;
+    background-color: var(--gray);
+}
+
+.art-nav-selected {
     background-color: var(--gray);
 }
 
