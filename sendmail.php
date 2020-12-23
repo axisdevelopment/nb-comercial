@@ -16,11 +16,14 @@ if (
     $content .= "Correo: " . $_POST["correo"] . "\r\n";
     $content .= "Empresa: " . $_POST["empresa"] . "\r\n";
 
-    $header = "From:".$_POST["email"]."\nReply-To:".$_POST["email"]."\n";
-    $header .= "Mime-Version: 1.0\n";
-    $header .= "Content-Type: text/plain";
-
+    $header = "From: " . $_POST["correo"] . "\r\n";
+    $header .= "Reply-To: " . $_POST["correo"] . "\r\n";
+    $header .= "X-Mailer: PHP/" . phpversion();
+    echo "<h1>TEST<h1>";
     mail($to, $subject, $content, $header);
-}; 
+
+    header("Location:index.html");
+
+};
 
 ?>
